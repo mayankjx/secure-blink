@@ -1,47 +1,68 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import HeaderComponent from "./components/HeaderComponent.vue";
+import ContentSection from "./components/ContentSection.vue";
+
+export default {
+  components: { HeaderComponent, ContentSection },
+};
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <HeaderComponent></HeaderComponent>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container c1">
+    <div class="row">
+      <ContentSection>
+        <template #title>Courses</template>
+        <template #subHeading>Our most popular courses</template>
+      </ContentSection>
+    </div>
+    <div class="row">
+      <ContentSection>
+        <template #title>Top Earners</template>
+        <template #subHeading>Transformng your ideas into reality</template>
+      </ContentSection>
+    </div>
+    <div class="row">
+      <ContentSection>
+        <template #title>Refer</template>
+        <template #subHeading>How It's Work</template>
+      </ContentSection>
+    </div>
+    <div class="row">
+      <ContentSection>
+        <template #title>Testimonials</template>
+        <template #subHeading
+          >Check out What Our Students Think About Us</template
+        >
+      </ContentSection>
+    </div>
+    <div class="row">
+      <ContentSection>
+        <template #title>Contact Us</template>
+        <template #subHeading>Reach Out with any question you have</template>
+      </ContentSection>
+    </div>
+  </div>
 </template>
 
-<style scoped>
+<style>
 header {
-  line-height: 1.5;
+  grid-column: 1/-1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 100;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.c1 {
+  margin-top: 90px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.row {
+  margin: 10% auto;
 }
 </style>
