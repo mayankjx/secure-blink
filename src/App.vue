@@ -1,18 +1,22 @@
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
+import HeroSection from "./components/HeroSection.vue";
 import ContentSection from "./components/ContentSection.vue";
 import CourseContainer from "./components/CourseComponents/CourseContainer.vue";
 import EarnerContainer from "./components/EarnerComponents/EarnerContainer.vue";
 import TestimonialContainer from "./components/TestimonialComponent/TestimonialContainer.vue";
+import ContactContainer from "./components/ContactComponents/ContactContainer.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   components: {
     HeaderComponent,
+    HeroSection,
     ContentSection,
     CourseContainer,
     EarnerContainer,
     TestimonialContainer,
+    ContactContainer,
     FooterComponent,
   },
 };
@@ -22,6 +26,7 @@ export default {
   <header>
     <HeaderComponent></HeaderComponent>
   </header>
+  <HeroSection></HeroSection>
   <div class="container c1">
     <div class="row">
       <ContentSection>
@@ -63,6 +68,7 @@ export default {
       <ContentSection>
         <template #title>Contact Us</template>
         <template #subHeading>Reach Out with any question you have</template>
+        <template #container><ContactContainer></ContactContainer></template>
       </ContentSection>
     </div>
   </div>
