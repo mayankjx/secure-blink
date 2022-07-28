@@ -6,7 +6,9 @@
     <div class="subHeading">
       <slot name="subHeading"></slot>
     </div>
-    <slot name="container"></slot>
+    <div class="content">
+      <slot name="container"></slot>
+    </div>
   </div>
 </template>
 
@@ -30,5 +32,15 @@
   color: #1f2532;
   text-transform: capitalize;
   opacity: 1;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.banner img {
+  width: 1396px;
+  position: relative;
+  left: -110px;
 }
 </style>

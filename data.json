@@ -1,0 +1,31 @@
+{
+  "courseList": [
+    {
+      "source": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Ultimate Business Intelligence Analyst A to Z Course 2021",
+      "enrollments": 46995,
+      "duration": 365,
+      "lectures": 44,
+      "author": "Albert Hitler",
+      "price": 2000
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Adobe Photoshop Training: From Beginner to Pro",
+      "enrollments": 687,
+      "duration": 365,
+      "lectures": 24,
+      "author": "Wanda Willson",
+      "price": 4000
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Social Media Marketing - A to Z Content Marketing class 2021",
+      "enrollments": 5788,
+      "duration": 3765,
+      "lectures": 54,
+      "author": "Albert Hitler",
+      "price": 2000
+    }
+  ]
+}

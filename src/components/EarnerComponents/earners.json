@@ -1,0 +1,20 @@
+{
+  "earners": [
+    {
+      "source": "../../assets/earners/christopher-campbell-rDEOVtE7vOs-unsplash.png",
+      "money": 80000
+    },
+    {
+      "source": "../../assets/earners/craig-mckay-jmURdhtm7Ng-unsplash.png",
+      "money": 57840
+    },
+    {
+      "source": "../../assets/earners/jonas-kakaroto-mjRwhvqEC0U-unsplash.png",
+      "money": 37837
+    },
+    {
+      "source": "../../assets/earners/luis-villasmil-hh3ViD0r0Rc-unsplash.png",
+      "money": 37472
+    }
+  ]
+}
