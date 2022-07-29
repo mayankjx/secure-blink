@@ -1,10 +1,34 @@
 <template>
   <div class="contactForm">
     <p>Fill up the form and our team will get back to you within 24 hours</p>
-    <input type="text" name="" id="" placeholder="Name" />
-    <input type="text" name="" id="" placeholder="Email" />
-    <input type="number" name="" id="" placeholder="Phone" />
-    <input type="text" name="" id="" placeholder="Subject" />
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Name"
+      v-model="formData.name"
+    />
+    <input
+      type="email"
+      name=""
+      id=""
+      placeholder="Email"
+      v-model="formData.email"
+    />
+    <input
+      type="number"
+      name=""
+      id=""
+      placeholder="Phone"
+      v-model="formData.phone"
+    />
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Subject"
+      v-model="formData.subject"
+    />
     <textarea
       name=""
       id=""
@@ -13,11 +37,57 @@
       placeholder="Message"
     ></textarea>
     <br />
-    <button>Submit</button>
+    <button @click="formSubmit">Submit</button>
   </div>
 </template>
 
-<script></script>
+<script>
+import { reactive } from "vue";
+import { computed } from "vue";
+import useValidate from "@vuelidate/core";
+import { required } from "@vuelidate/validators";
+
+export default {
+  setup() {
+    const formData = reactive({
+      name: "",
+      email: "",
+      phone: 0,
+      subject: "",
+    });
+
+    const rules = computed(() => {
+      return {
+        email: { required },
+        name: { required },
+        phone: { required },
+        subject: { required },
+      };
+    });
+
+    const formSubmit = () => {
+      if (formData.phone.toString().length !== 10) {
+        alert(`failed`);
+      }
+      if (
+        formData.name &&
+        formData.email &&
+        formData.phone &&
+        formData.subject
+      ) {
+        alert(`Form submit`);
+      } else {
+        alert(`failed`);
+      }
+    };
+
+    return {
+      formData,
+      formSubmit,
+    };
+  },
+};
+</script>
 
 <style>
 .contactForm {

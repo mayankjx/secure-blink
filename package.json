@@ -8,6 +8,8 @@
     "test:unit": "vitest --environment jsdom"
   },
   "dependencies": {
+    "@vuelidate/core": "^2.0.0-alpha.43",
+    "@vuelidate/validators": "^2.0.0-alpha.31",
     "bootstrap": "^5.2.0",
     "vue": "^3.2.37"
   },
