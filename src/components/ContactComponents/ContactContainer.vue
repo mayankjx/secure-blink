@@ -3,15 +3,15 @@
     <div class="contactInfo">
       <h3>Contact Information</h3>
       <div class="contactBlock">
-        <img src="../../assets/Group 10748.svg" alt="" />
+        <img src="../../assets/Group10748.svg" alt="" />
         <p>contact@coursepro.com</p>
       </div>
       <div class="contactBlock">
-        <img src="../../assets/Group 10749.svg" alt="" />
+        <img src="../../assets/Group10749.svg" alt="" />
         <p>1800-562-895, 1800-869-877</p>
       </div>
       <div class="contactBlock">
-        <img src="../../assets/Group 10750.svg" alt="" />
+        <img src="../../assets/Group10750.svg" alt="" />
         <p>102 Street, India</p>
       </div>
     </div>

@@ -8,7 +8,7 @@
       </h2>
       <button>Let's get start</button>
     </div>
-    <img src="../assets/Rectangle 25.svg" alt="" />
+    <img src="../assets/Rectangle25.svg" alt="" />
   </div>
   <div class="hero-bottom">
     <div class="container">

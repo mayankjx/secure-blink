@@ -48,7 +48,7 @@ export default {
         <template #subHeading>How It's Work</template>
         <template #container>
           <div class="banner">
-            <img src="./assets/Group 12142.png" alt="" />
+            <img src="./assets/Group12142.png" alt="" />
           </div>
         </template>
       </ContentSection>
