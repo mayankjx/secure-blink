@@ -39,10 +39,13 @@ export default {
   left: -120px;
   display: flex;
   justify-content: space-evenly;
+  padding: 50px 0px;
 }
 
 .contactInfo {
   width: 40%;
+  position: relative;
+  left: 150px;
 }
 
 .contactBlock {

@@ -16,7 +16,7 @@
       v-model="formData.email"
     />
     <input
-      type="number"
+      type="text"
       name=""
       id=""
       placeholder="Phone"
@@ -52,7 +52,7 @@ export default {
     const formData = reactive({
       name: "",
       email: "",
-      phone: 0,
+      phone: "",
       subject: "",
     });
 
@@ -65,8 +65,12 @@ export default {
       };
     });
 
+    function containsAnyLetter(str) {
+      return /[a-zA-Z]/.test(str);
+    }
+
     const formSubmit = () => {
-      if (formData.phone.toString().length !== 10) {
+      if (formData.phone.length !== 10 && containsAnyLetter(formData.phone)) {
         alert(`failed`);
       }
       if (
@@ -108,5 +112,12 @@ export default {
   width: 40%;
   margin-right: 40px;
   margin-bottom: 20px;
+  outline: none;
+  background: none;
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 4px #01cb63 solid;
+  font-style: italic;
+  font-weight: 400;
 }
 </style>
